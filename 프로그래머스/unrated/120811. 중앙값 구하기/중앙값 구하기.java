@@ -1,9 +1,8 @@
-import java.util.Arrays;
+import java.util.*;
 
 class Solution {
     public int solution(int[] array) {
-        
-        Arrays.sort(array); // array 정렬
-        return array[array.length / 2];
+        Arrays.sort(array);
+        return array[array.length/2];
     }
 }
