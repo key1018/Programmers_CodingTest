@@ -1,12 +1,12 @@
 class Solution {
     public double solution(int[] numbers) {
-
-        double num = 0.0;
-        
-        for(int i = 0; i < numbers.length; i++){
-            num += numbers[i];
+        int a = numbers.length;
+        double sum = 0.0;
+        if(a % 2 == 0){
+            sum = (double)((double)numbers[a/2] + (double)numbers[a/2 - 1])/2;
+        } else {
+            sum = (double)numbers[a/2];
         }
-        
-        return num / numbers.length;
+        return sum;
     }
 }
